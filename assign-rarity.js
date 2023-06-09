@@ -15,7 +15,9 @@ function assignRarityValues() {
 
   Object.entries(data).forEach(([id, nft]) => {
     const assignedNFT = {
+      mintAddress: nft.mintAddress,
       name: nft.name,
+      symbol: nft.symbol,      
       id: `#${id}`,
       rank: 0,
       total_rarity: 0,
